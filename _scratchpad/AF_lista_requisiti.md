@@ -70,3 +70,16 @@ Alcuni dettagli del sistema sono ancora da definire quindi questi requisiti non 
 	4. #Decidere Se ci sono più team, se l'utente che fa la ricerca è l'utente amministratore root, nel momento in cui effettua una ricerca questa automaticamente dovrebbe essere fatta su tutti i team, essendo che questo utente non appartiene a nessun team specifico.
 
 8. #UserRequirement  Deve essere prevista una sezione per commenti associata a ciascun bug, in cui tutti gli utenti possano lasciare messaggi, aggiornamenti o richieste di chiarimento.
+
+9. #UserRequierement Tra i vari attori che sono stati individuati:
+- User
+- Utenti "speciali"
+- Admin
+
+Durante lo sviluppo del software verrano individuati attori "speciali" come (Mod, Helper) che verranno affidati funzianlità non alla pari del admin, ma che permette all'amminstrazione di un team di affidare funzionalità ad utenti appartenenti a quel team.
+
+10. #UserRequierement L'issue segnalata da un utente all'interno di un team, viene vista soltanto da utenti dello stesso team. Non sarà possibile ad utenti di altri team di visualizzarla. Sarà compito dell'admin del team di assegnare una priorità all'issue e in quel caso sarà nota agli altri team di sviluppo.
+
+Nota> questa idea parte da una considerazione realistica: issue che coinvolgono il team stesso, saranno accessibili e commentabili da utenti del team stesso (e dal root, che ha accesso su tutto). Se l'admin ritiene opportuno che tale segnalazioni coinvolgono team esterni al proprio, allora darà una priorità in base ad un suo criterio (ad esempio, quanto più o meno vincola il lavoro del suo team). Per cui ci saranno due sezioni di issue:
+- Una inerente solo e unicamente al team che si occupa di un determinato campo
+- Una inerente all'intero team di sviluppo e richiede un "intervento unanime" 
